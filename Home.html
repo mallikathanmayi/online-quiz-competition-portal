@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Quiz Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+header{
+    background:rgba(13,110,253,0.95);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+header h2{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    background:transparent;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    text-decoration:none;
+    color:#0d6efd;
+    background:white;
+    border-radius:5px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd700;
+    color:black;
+}
+
+section{
+    padding:50px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.92);
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+}
+
+.card h3{
+    color:#0d99fd;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+footer{
+    background:rgba(0,0,0,.85);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Online Quiz Portal</h2>
+
+<nav>
+<a href="Home.html">Home</a>
+<a href="students/login.html">Student Login</a>
+<a href="students/Registration.html">Register</a>
+<a href="search.html">Search</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome to Online Quiz Portal</h1>
+
+<p>Practice Programming Quizzes and Improve Your Skills</p>
+
+<a href="students/login.html" class="btn">Student Login</a>
+
+<a href="students/Registration.html" class="btn">Register</a>
+
+<a href="admin/admin_login.html" class="btn">Admin Login</a>
+
+</section>
+
+<section id="features">
+
+<h2>Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Student Login</h3>
+<p>Secure login system for students.</p>
+</div>
+
+<div class="card">
+<h3>Online Quizzes</h3>
+<p>Attend quizzes anytime.</p>
+</div>
+
+<div class="card">
+<h3>Instant Results</h3>
+<p>View your score immediately after submission.</p>
+</div>
+
+<div class="card">
+<h3>Admin Dashboard</h3>
+<p>Manage quizzes, students and questions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Available Subjects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>SQL</h3>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+</div>
+
+<div class="card">
+<h3>Java</h3>
+</div>
+
+<div class="card">
+<h3>Python</h3>
+</div>
+
+<div class="card">
+<h3>C Programming</h3>
+</div>
+
+<div class="card">
+<h3>DBMS</h3>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Online Quiz Portal | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

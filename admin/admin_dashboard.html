@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef2f7;
+}
+
+.header{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.header h1{
+margin-bottom:8px;
+font-size:32px;
+}
+
+.header p{
+font-size:18px;
+}
+
+.container{
+width:90%;
+margin:40px auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+width:300px;
+background:white;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+color:#0d6efd;
+margin-bottom:15px;
+}
+
+.card p{
+color:#666;
+margin-bottom:25px;
+line-height:1.5;
+}
+
+.card a{
+display:inline-block;
+padding:10px 25px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.card a:hover{
+background:#084298;
+}
+
+.logout{
+text-align:center;
+margin:20px;
+}
+
+.logout a{
+background:#dc3545;
+color:white;
+padding:12px 35px;
+text-decoration:none;
+border-radius:6px;
+font-size:18px;
+}
+
+.logout a:hover{
+background:#b02a37;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>👨‍💼 Admin Dashboard</h1>
+<p>Online Quiz Competition Portal</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>➕ Add Questions</h2>
+<p>Add questions for all rounds.</p>
+<a href="add_question.php">Open</a>
+</div>
+
+<div class="card">
+<h2>📋 View Questions</h2>
+<p>View all quiz questions.</p>
+<a href="view_questions.php">Open</a>
+</div>
+
+<div class="card">
+<h2>✏️ Edit Questions</h2>
+<p>Edit quiz questions.</p>
+<a href="edit_question.php">Open</a>
+</div>
+
+<div class="card">
+<h2>🗑 Delete Questions</h2>
+<p>Delete unwanted questions.</p>
+<a href="delete_question.php">Open</a>
+</div>
+
+<div class="card">
+<h2>👨‍🎓 Students</h2>
+<p>View registered students.</p>
+<a href="view_students.php">Open</a>
+</div>
+
+<div class="card">
+<h2>📊 Results</h2>
+<p>View Round 1, Round 2 and Final Round results.</p>
+<a href="view_results.php">Open</a>
+</div>
+
+<div class="card">
+<h2>📜 Certificates</h2>
+<p>View Winner and Participation Certificates.</p>
+<a href="admin_certificates.php">Open</a>
+</div>
+
+</div>
+
+<div class="logout">
+<a href="admin_logout.php">Logout</a>
+</div>
+
+<div class="footer">
+© 2026 Online Quiz Competition Portal | Admin Panel
+</div>
+
+</body>
+</html>

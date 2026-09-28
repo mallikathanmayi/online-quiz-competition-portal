@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.header{
+    background:#007BFF;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    color:#007BFF;
+    margin-bottom:15px;
+}
+
+.rounds{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.round{
+    flex:1;
+    min-width:250px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+}
+
+.round h3{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#007BFF;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.menu{
+    text-align:center;
+}
+
+.menu a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.menu a:hover{
+    background:#218838;
+}
+
+.logout{
+    background:#dc3545 !important;
+}
+
+.logout:hover{
+    background:#c82333 !important;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🎓 Student Dashboard</h1>
+    <p>Welcome, Student</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Quiz Competition</h2>
+
+<p><b>Total Rounds:</b> 3</p>
+
+<div class="rounds">
+
+<div class="round">
+<h3>🥇 Round 1</h3>
+<p>20 Questions</p>
+<p>Pass Marks: 10/20</p>
+<a href="round1.php" class="btn">Start Competition</a>
+</div>
+
+<div class="round">
+<h3>🥈 Round 2</h3>
+<p>15 Questions</p>
+<p>Pass Marks: 12/15</p>
+</div>
+
+<div class="round">
+<h3>🏆 Final Round</h3>
+<p>10 Questions</p>
+<p>Pass Marks: 8/10</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card menu">
+
+<h2>Student Menu</h2>
+<a href="profile.php" class="btn">profile</a>
+<a href="instructions.php" class="btn">Instructions</a>
+
+<a href="previous_attempts.php">📊 Previous Results</a>
+
+<a href="logout.php" class="logout">🚪 Logout</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

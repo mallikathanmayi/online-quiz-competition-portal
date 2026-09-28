@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Quiz</title>
+
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            background-color:#f2f2f2;
+            margin:0;
+        }
+
+        h1{
+            background-color:#0066cc;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin:0;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:20px;
+        }
+
+        input{
+            width:250px;
+            padding:8px;
+        }
+
+        button{
+            background-color:green;
+            color:white;
+            padding:8px 15px;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:orange;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background-color:#0066cc;
+            color:white;
+        }
+    </style>
+
+    <script>
+        function searchQuiz(){
+            var quiz = document.getElementById("quiz").value;
+
+            if(quiz==""){
+                alert("Please enter a quiz name.");
+            }
+            else{
+                alert("Searching for: " + quiz);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h1>Search Quiz</h1>
+
+<div class="container">
+
+<h2>Search for a Quiz</h2>
+
+<input type="text" id="quiz" placeholder="Enter Quiz Name">
+<button onclick="searchQuiz()">Search</button>
+
+<h2>Available Quizzes</h2>
+
+<table>
+
+<tr>
+<th>Quiz Name</th>
+<th>Category</th>
+<th>Duration</th>
+</tr>
+
+<tr>
+<td>HTML Basics</td>
+<td>HTML</td>
+<td>20 Minutes</td>
+</tr>
+
+<tr>
+<td>CSS Fundamentals</td>
+<td>CSS</td>
+<td>20 Minutes</td>
+</tr>
+
+<tr>
+<td>JavaScript Quiz</td>
+<td>JavaScript</td>
+<td>25 Minutes</td>
+</tr>
+
+<tr>
+<td>Python Programming</td>
+<td>Python</td>
+<td>30 Minutes</td>
+</tr>
+
+<tr>
+<td>Java Programming</td>
+<td>Java</td>
+<td>25 Minutes</td>
+</tr>
+
+<tr>
+<td>DBMS Quiz</td>
+<td>DBMS</td>
+<td>20 Minutes</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

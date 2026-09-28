@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Login | Online Quiz Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.60),
+        rgba(13,110,253,0.55)
+    ),
+    url("background.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container{
+    width:420px;
+    max-width:90%;
+
+    background:rgba(255,255,255,0.96);
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
+
+.logo{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:8px;
+}
+
+h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:8px;
+    font-size:28px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    display:block;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.input-box input{
+    width:100%;
+    padding:13px 15px;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    font-size:16px;
+    outline:none;
+}
+
+.input-box input:focus{
+    border-color:#0d6efd;
+
+    box-shadow:
+    0 0 0 3px rgba(13,110,253,0.12);
+}
+
+button{
+    width:100%;
+    padding:14px;
+
+    background:#0d6efd;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+
+.register{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+}
+
+.register a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
+
+.home{
+    text-align:center;
+    margin-top:18px;
+}
+
+.home a{
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+.home a:hover{
+    color:#0d6efd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">🎓</div>
+
+    <h2>Student Login</h2>
+
+    <p class="subtitle">
+        Login to access your quiz dashboard
+    </p>
+
+    <!-- IMPORTANT:
+         login.html and login.php are in same folder
+    -->
+
+    <form action="login.php" method="POST">
+
+        <div class="input-box">
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+        </div>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <div class="register">
+
+        Don't have an account?
+
+        <a href="Registration.html">
+            Register Here
+        </a>
+
+    </div>
+
+    <div class="home">
+
+        <a href="../Home.html">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
